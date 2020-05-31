@@ -1,0 +1,88 @@
+@import "~themes/vars.less";
+@search-height: 48px;
+@divider-border: 1px solid #e3e8ee;
+
+.noborder() {
+    border: none !important;
+    outline: none;
+    box-shadow: none;
+    &:focus {
+        border: none !important;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.search {
+    padding: 0;
+    display: -webkit-box;
+}
+
+.searchItem {
+    flex: 1;
+    line-height: @search-height;
+    border-left: @divider-border;
+    min-width: 100px;
+    max-width: 270px;
+    text-align: left;
+    
+    :global {
+        
+        input,
+        .ant-input {
+            .noborder();
+        }
+    
+        .ant-input {
+            height: @search-height;
+            line-height: @search-height;
+        }
+
+        .ant-select-selection--single {
+            .noborder();
+            height: @search-height;
+            & > .ant-select-selection__rendered {
+                line-height: @search-height;
+            }
+        }
+
+        .ant-calendar-picker-input {
+            padding: 0;
+        }
+
+        .ant-input-affix-wrapper .ant-input,
+        .ant-select-selection--single {
+            width: 170px;
+        }
+
+    }
+    &.searchRangePicker {
+        width: 270px;
+    }
+}
+
+.searchBox {
+
+
+    & > .searchItem {
+        border-left: @divider-border;
+    }
+}
+
+.actions {
+    :global {
+        .ant-btn {
+            max-width: 120px;
+            border: none;
+            box-shadow: none;
+            border-left: @divider-border;
+            line-height: @search-height;
+            height: @search-height;
+            color: @lightbot-blue-1;
+
+            & + .ant-btn {
+                margin-left: 0;
+            }
+        }
+    }
+}

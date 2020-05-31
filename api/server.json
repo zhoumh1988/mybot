@@ -1,0 +1,21 @@
+{
+    "apps" : [{
+      "name"        : "lightbot-api",
+      "script"      : "./server.js",
+      "watch"       : true,
+      "env": {
+        "mysql": {
+          "host": "192.168.10.202",
+          "connectionLimit": 20
+        },
+        "NODE_ENV": "dev"
+      },
+      "env_pro": {
+        "mysql": {
+          "host": "localhost",
+          "connectionLimit": 20
+        },
+        "NODE_ENV": "pro"
+      }
+    }]
+}

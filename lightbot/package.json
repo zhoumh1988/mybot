@@ -1,0 +1,30 @@
+{
+  "name": "lightbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lightbot.js",
+  "scripts": {
+    "dev": "pm2 start ./lightbot.json --env development && pm2 logs lightbot",
+    "start": "pm2 start ./lightbot.json --env pro && pm2 logs lightbot",
+    "restart": "pm2 restart lightbot && pm2 logs lightbot",
+    "reload": "pm2 reload lightbot.json && pm2 logs lightbot",
+    "stop": "pm2 stop lightbot"
+  },
+  "author": "LittleStrongZhou",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "file-box": "^0.8.24",
+    "jsmicro-is-empty": "^1.0.1",
+    "log4js": "^2.11.0",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "qrcode-terminal": "^0.12.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "wechaty": "^0.23.17",
+    "wechaty-puppet-padchat": "^0.17.18",
+    "xml2json": "^0.11.2"
+  },
+  "devDependencies": {}
+}

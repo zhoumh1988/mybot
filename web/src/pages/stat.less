@@ -1,0 +1,283 @@
+.SearchContainer {
+    height: 100%;
+    text-align: right;
+    margin-bottom: 15px;
+    //border-bottom: 1px solid #e3e8ee;
+    line-height: 48px;
+
+    div,
+    span {
+        border-top: none;
+        border-bottom: none;
+        border-radius: 0;
+        border-right: none;
+        height: 48px;
+    }
+
+    div {
+        line-height: 48px;
+    }
+    span {
+        span:nth-child(2) {
+            line-height: 40px;
+        }
+    }
+
+    .search-item {
+        max-width: 270px;
+        min-width: 170px;
+        height: 48px;
+        line-height: 48px;
+        text-align: left;
+        float: left;
+        span {
+            height: 48px;
+        }
+    }
+}
+.homeRow {
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #ddd;
+    margin-bottom: 1rem;
+}
+
+.fexItem {
+    background: #fff;
+    width: 16.66%;
+    text-align: left;
+    border-right: #eee 1px solid;
+    display: inline-flex!important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px !important;
+    float: inherit;
+    p {
+        margin: 0;
+        font-size: 12px;
+        color: #657180;
+    }
+    div > svg {
+        font-size: 3rem;
+    }
+    div p:nth-of-type(2) {
+        color: #464c5b;
+        font-size: 24px;
+    }
+}
+.smallItem {
+    background: #fff;
+    border-right: #eee 1px solid;
+    padding: 15px !important;
+    color: #464c5b;
+    font-size: 18px;
+    .itemP,
+    p {
+        margin: 0.2rem 0 0;
+    }
+    .itemP {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .smallTile {
+        font-size: 12px;
+        color: 657180;
+    }
+}
+.homeItem {
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #ddd;
+    p {
+        padding-left: 20px;
+        border-bottom: 1px solid #ddd;
+        line-height: 35px;
+        font-weight: bold;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            margin-bottom: 0;
+            border: none;
+        }
+    }
+}
+.rightItem {
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+}
+.redBg {
+    background-image: linear-gradient(-75deg, #ff9085 82%, #f6ffa9 100%), linear-gradient(#ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    p {
+        color: white;
+    }
+    .flexItem {
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .select-noBorder {
+            color: white;
+            background: transparent!important;
+            border: none;
+        }
+        svg {
+            color: white;
+        }
+    }
+    .priceTab {
+        margin-left: 20px;
+        span {
+            display: inline-block;
+            color: white;
+            opacity: 0.6;
+            margin-right: 10px;
+            cursor: pointer;
+            line-height: 35px;
+        }
+        .active {
+            opacity: 1;
+            border-bottom: 3px solid #fff;
+        }
+    }
+    :global {
+        .ant-select-selection {
+            border: none;
+            background: transparent;
+            color: white;
+            margin-top: 5px;
+        }
+        .ant-select-selection:focus {
+            box-shadow: none;
+        }
+        div.ant-table-body {
+            margin-top: 7px;
+        }
+    }
+
+}
+.blueBg {
+    background-image: linear-gradient(-50deg, #41a8ff 0%, #78b2ff 55%, #aebbff 100%), linear-gradient( #ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    p {
+        color: white;
+    }
+    :global {
+        div.ant-table-body {
+            margin-top: 7px;
+        }
+    }
+}
+.yelloText {
+    color: #fffc00;
+    margin-left: 15px;
+}
+.leftText {
+    margin-left: 15px;
+}
+.rightItem {
+    :global {
+        .ant-table-small {
+            border-radius: 0;
+        }
+        .ant-table-body {
+            background: transparent!important;
+        }
+        .ant-table-header {
+            background: rgba(244, 246, 248, 0.3)!important;
+        }
+        .ant-table-thead > tr > th {
+            background: transparent!important;
+            color: white;
+            padding: 5px 8px 0 !important;
+            border-bottom: none!important;
+        }
+        .ant-table-thead > tr th:nth-of-type(1) span {
+            margin-left: 15px;
+        }
+        .ant-table-tbody > tr {
+            color: white;
+        }
+        .ant-table-tbody > tr:hover > td {
+            opacity: 1;
+            background: transparent!important;
+        }
+    }
+}
+.outBg {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.inner {
+    height: 4px;
+    background: #35a9d9;
+    border-radius: 2px;
+    opacity: 0.5;
+}
+.tabChange span {
+    position: relative;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #9ea7b4;
+    border-left: 1px solid #e3e8ee;
+    cursor: pointer;
+}
+.tabChange .active {
+    color: #0553f1;
+    .bBorder {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-image: linear-gradient(90deg, #0553f1 0%, #35a9d9 47%, #65ffc0 100%), linear-gradient( #ffffff, #ffffff);
+        display: block;
+    }
+}
+.inlineFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableBorder {
+    :global {
+        .ant-table-scroll {
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
+.padding {
+    padding: 15px;
+    tr:nth-child(2n+1) {
+        background-color: #f5f7f9;
+    }
+}
+.radius {
+    border-radius: 8px;
+    & > div {
+        border-radius: 8px;
+        & > div {
+            border-radius: 8px;
+            & > div {
+                border-radius: 8px;
+                & > div {
+                    border-radius: 8px;
+                    & > div {
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

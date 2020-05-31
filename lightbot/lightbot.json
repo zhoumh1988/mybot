@@ -1,0 +1,20 @@
+{
+    "apps" : [{
+      "name"        : "lightbot",
+      "script"      : "./lightbot.js",
+      "watch"       : false,
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "env": {
+        "WECHATY_PUPPET": "padchat",
+        "WECHATY_PUPPET_PADCHAT_TOKEN": "puppet_padchat_b4ca24b31694f23b",
+        "WECHATY_LOG": "silly",
+        "NODE_ENV": "development"
+      },
+      "env_pro": {
+        "WECHATY_PUPPET": "padchat",
+        "WECHATY_PUPPET_PADCHAT_TOKEN": "puppet_padchat_f20524745037879d",
+        "WECHATY_LOG": "info",
+        "NODE_ENV": "pro"
+      }
+    }]
+}

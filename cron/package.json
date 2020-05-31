@@ -1,0 +1,26 @@
+{
+  "name": "lightbot-cron",
+  "version": "1.0.0",
+  "description": "lightbot's timer tasks",
+  "main": "cron.js",
+  "scripts": {
+    "test": "node test.js",
+    "dev": "pm2 start cron.json --env dev && pm2 logs lightbot-cron",
+    "start": "pm2 start cron.json --env pro && pm2 logs lightbot-cron",
+    "restart": "pm2 delete lightbot-cron && pm2 start cron.json --env pro && pm2 logs lightbot-cron",
+    "reload": "pm2 reload cron.json",
+    "recount": "node init.js"
+  },
+  "author": "LittleStrong",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cron": "^1.4.1",
+    "jsmicro-is-empty": "^1.0.1",
+    "log4js": "^3.0.0",
+    "moment": "^2.22.2",
+    "mysql": "^2.15.0",
+    "redis": "^2.8.0",
+    "superagent": "^3.8.3"
+  }
+}

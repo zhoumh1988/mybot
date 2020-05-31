@@ -1,0 +1,107 @@
+@import "~themes/vars.less";
+
+
+.header {
+  :global {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: ~"calc(100% - 228px)";
+    transition: all 0.3s;
+    .ant-menu-submenu-title {
+      height: 68px;
+    }
+
+    .ant-menu {
+      border-bottom: none;
+      height: 68px;
+      background: transparent;
+    }
+
+    .ant-menu-horizontal > .ant-menu-submenu {
+      top: 0;
+      margin-top: 0;
+    }
+
+    .ant-menu-horizontal > .ant-menu-item,
+    .ant-menu-horizontal > .ant-menu-submenu {
+      border-bottom: none;
+    }
+
+    .ant-menu-horizontal > .ant-menu-item-active,
+    .ant-menu-horizontal > .ant-menu-item-open,
+    .ant-menu-horizontal > .ant-menu-item-selected,
+    .ant-menu-horizontal > .ant-menu-item:hover,
+    .ant-menu-horizontal > .ant-menu-submenu-active,
+    .ant-menu-horizontal > .ant-menu-submenu-open,
+    .ant-menu-horizontal > .ant-menu-submenu-selected,
+    .ant-menu-horizontal > .ant-menu-submenu:hover {
+      border-bottom: none;
+    }
+  }
+  // box-shadow: @shadow-2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  background-color: #F5F7F9;
+
+  .rightWarpper {
+    display: flex;
+  }
+
+  .screenshot {
+    :global {
+      .antlightbot {
+        font-size: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+    }
+
+    line-height: 68px;
+    color: @lightbot-grey-1;
+    cursor: pointer;
+
+    &:hover {
+      color: @lightbot-blue-1;
+    }
+  }
+
+  &.collapsed {
+    width: ~"calc(100% - 80px)";
+  }
+}
+
+.popovermenu {
+  width: 280px;
+  margin-left: 6px;
+
+  :global .ant-popover-inner-content {
+    padding: 0;
+
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-item {
+      border-right: 0;
+    }
+
+    .ant-menu-inline .ant-menu-item-selected,
+    .ant-menu-inline .ant-menu-selected {
+      border-right: 0;
+    }
+  }
+}
+
+.overflow-hidden {
+  :global {
+    * {
+      overflow: hidden!important;
+    }
+  }
+}
+#page-content{
+  background: #F5F7F9;
+}

@@ -1,0 +1,110 @@
+//超链接
+.Hyperlink {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    .title {
+        display: block;
+        max-width: 350px;
+    }
+
+    .content {
+        display: -webkit-box!important;
+        word-break: break-all;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        -webkit-line-clamp: 3;
+        
+        max-width: 350px;
+        color: fade(#000, 45%);
+    }
+    .title {
+        padding: 5px 0;
+    }
+}
+
+//个人名片
+.businessCard {
+    min-width: 250px;
+    width: 100%;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    div {
+        padding: 10px;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    p {
+        border-top: 1px solid #e5e5e5;
+        padding: 5px 10px;
+        margin-bottom: 0;
+        color: #999;
+        font-size: 12px;
+    }
+}
+
+// 小程序
+.program {
+    min-width: 250px;
+    width: 100%;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    div {
+        padding: 10px;
+        span {
+            color: #999;
+            vertical-align: middle;
+        }
+    }
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    .content {
+        padding: 0 10px;
+        margin-bottom: 5px;
+
+        display: -webkit-box!important;
+        word-break: break-all;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        -webkit-line-clamp: 3;
+        
+        max-width: 350px;
+    }
+    .title {
+        font-size: 10px;
+        color: fade(#000, 45%);
+    }
+    .tag {
+        border-top: 1px solid #e5e5e5;
+        padding: 5px 10px;
+        margin-bottom: 0;
+        color: #999;
+        font-size: 12px;
+    }
+}
+
+.border{
+    border: none;
+    p,.tag {
+        border-top: none;
+    }
+}

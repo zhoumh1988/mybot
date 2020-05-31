@@ -1,0 +1,130 @@
+.content {
+    height: ~"calc(100vh - 147px)";
+}
+
+.SearchForm {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #d7dde4;
+    border-radius: 16px 16px 0 0;
+    form{
+        width: 80%;
+        float: left;
+        display: flex;
+    }
+    .bottonBox{
+        width: 20%;
+        float: left;
+        display: flex;
+        button{
+            height: 32px;
+            margin-top: 29px;
+            flex: 1;
+            justify-content: space-around;
+        }
+        button:nth-child(1){
+            background-color: #0655f0;
+            margin-right: 10%;
+        }
+        button:nth-child(2){
+            border: solid 1px #0553f1 !important;
+            color: #0655f0 !important;
+        }
+    }
+}
+.SearchForm:after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.ChatListContainer {
+    height: ~"calc(100vh - 238px)";
+    overflow: scroll;
+    padding: 0 20px;
+}
+
+.ChatImg {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.ChatTime {
+    color: #999999;
+    border-top: 1px solid #d7dde4;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+.bg{
+    background-color: #e3e8ee;
+    border-radius: 8px;
+    position: relative;
+    div,span{
+        padding: 5px 10px;
+        display: block;
+    }
+}
+.bg:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -35px;
+    margin: 20px;
+    border-right: 15px solid #fff;
+    border-bottom: 15px solid #fff;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-radius: 20px;
+    z-index: 9;
+}
+.bg:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    margin: 20px;
+    border-right: 20px solid #e3e8ee;
+    border-bottom: 20px solid #e3e8ee;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+}
+
+.bd {
+    border-radius: 8px;
+    border: solid 1px #d7dde4;
+}
+
+
+/* 对话模式样式 */
+:global {
+    .ant-form > .ant-row.ant-form-item{
+        flex: 1;
+        margin-right: 2%;
+        margin-bottom: 0;
+        .ant-select-selection{
+            background-color: #f5f7f9 !important;
+        }
+        .ant-calendar-picker input{
+            background-color: #f5f7f9 !important;
+        }
+    }
+    .ant-form > .ant-row.ant-form-item:nth-child(3),
+    .ant-form > .ant-row.ant-form-item:nth-child(4){
+        flex: 1.5;
+    }
+    .ant-form:after {
+        clear: both;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}

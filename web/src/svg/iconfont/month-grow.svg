@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="month-grow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<g>
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="51.35" y1="35.65" x2="4.7312" y2="-10.9688" gradientTransform="matrix(1 0 0 1 0 16)">
+				<stop  offset="0" style="stop-color:#41A8FF"/>
+				<stop  offset="1" style="stop-color:#AEBBFF"/>
+			</linearGradient>
+			<path class="st0" d="M16.1,0.4h24c8.8,0,16,7.2,16,16v24c0,8.8-7.2,16-16,16H16c-8.8,0-16-7.2-16-16v-24
+				C0.1,7.5,7.3,0.4,16.1,0.4z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<path class="st1" d="M16,38.3h24v2H16V38.3z"/>
+	<path class="st1" d="M18,22.4h2v14h-2V22.4z"/>
+	<path class="st1" d="M24,28.4h2v8h-2V28.4z"/>
+	<path class="st1" d="M30,22.4h2v14h-2V22.4z"/>
+	<path class="st1" d="M36,16.4h2v20h-2V16.4z"/>
+</g>
+</svg>
